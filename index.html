@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ALTAS TROL4S — Valorant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    /* ================== TÍTULO ================== */
+    @font-face {
+      font-family: 'BunkerStencil';
+      src: url('fonts/BunkerStencil.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .team-title {
+      font-family: 'BunkerStencil', sans-serif;
+      font-size: 4.2rem;
+      letter-spacing: 6px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(12px);
+      animation: softIntro 1.6s ease-out forwards;
+    }
+
+    .accent {
+      color: #1abc9c;
+      text-shadow: 0 0 6px rgba(26, 188, 156, 0.6);
+    }
+
+    @keyframes softIntro {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1.year {
+      font-size: 2rem;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
+      opacity: 0.7;
+    }
+
+    /* ================== RECUADROS ================== */
+    .box {
+      border: 2px solid #1abc9c;
+      padding: 25px;
+      border-radius: 12px;
+      background-color: #151515;
+      margin-bottom: 25px;
+    }
+
+    .box h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: #1abc9c;
+      text-align: center;
+    }
+
+    /* Primer recuadro centrado */
+    .dates {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    /* Segundo recuadro a la izquierda */
+    .info {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .info strong {
+      color: #1abc9c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- TÍTULO -->
+    <h1 class="team-title">
+      ALTAS TROL<span class="accent">4</span>S
+    </h1>
+
+    <h1 class="year">2026</h1>
+
+    <!-- RECUADRO 1 -->
+    <div class="box">
+      <h2>Próximas Partidas</h2>
+      <div class="dates">
+        <p>📅 18 Enero — SPLIT</p>
+        <p>📅 21–25 Enero — BREEZE</p>
+        <p>📅 28 Ene / 1 Feb — PEARL</p>
+        <p>📅 4–8 Febrero — BIND</p>
+        <p>📅 11–15 Febrero — ABYSS</p>
+        <p>📅 18–22 Febrero — CORRODE</p>
+        <p>📅 25–28 Febrero — HAVEN</p>
+        <p>🏆 1 Marzo — PLAYOFF</p>
+      </div>
+    </div>
+
+    <!-- RECUADRO 2 -->
+    <div class="box">
+      <h2>Semana 1</h2>
+      <div class="info">
+        <p><strong>Fecha:</strong> 14–18 Enero</p>
+        <p><strong>Mapa:</strong> SPLIT</p>
+
+        <br>
+
+        <p><strong>Jugadores:</strong></p>
+        <p>🎮 VIEJALOCA</p>
+        <p>🕹️ CRIS</p>
+        <p>💥 CAPYLOVE</p>
+        <p>🎯 TANI</p>
+        <p>🔥 CANTU</p>
+
+        <br>
+
+        <p>✉️ <strong>Correo:</strong> altastrolas666@gmail.com</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+
