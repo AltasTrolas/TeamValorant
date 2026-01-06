@@ -24,25 +24,41 @@
       max-width: 600px;
     }
 
-    /* ================== FUENTE ================== */
-    @font-face {
-      font-family: 'BunkerStencil';
-      src: url('fonts/BunkerStencil.ttf') format('truetype');
-    }
-
     /* ================== AÑO ================== */
     h1.year {
       font-size: 2rem;
       letter-spacing: 4px;
-      margin: 20px 0 30px;
+      margin: 20px 0 15px;
       opacity: 0.7;
     }
 
-    /* ================== BOTÓN INICIO ================== */
-    .btn-type {
+    /* ================== BOTÓN PRINCIPAL ================== */
+    .btn-main {
       display: inline-block;
       margin-bottom: 30px;
-      padding: 14px 34px;
+      padding: 12px 34px;
+      background-color: #000;
+      color: #aaa;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      font-family: monospace;
+      transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-main:hover {
+      color: #2ee6c6;
+      border-color: #2ee6c6;
+      box-shadow: 0 0 10px #2ee6c6;
+    }
+
+    /* ================== BOTONES JUGADORES ================== */
+    .btn-type {
+      display: inline-block;
+      margin: 6px;
+      padding: 12px 28px;
       border: 2px solid #1abc9c;
       border-radius: 10px;
       color: #1abc9c;
@@ -50,30 +66,12 @@
       font-weight: bold;
       letter-spacing: 2px;
       background-color: transparent;
-
-      /* SIN TRANSICIÓN */
-      transition: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-   .btn-type {
-  display: inline-block;
-  margin-bottom: 30px;
-  padding: 14px 34px;
-  border: 2px solid #1abc9c;
-  border-radius: 10px;
-  color: #1abc9c;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 2px;
-  background-color: transparent;
-  transition: none;
-}
-
-.btn-type:hover {
-  background-color: #1abc9c;
-  color: #0f0f0f;
-}
-
+    .btn-type:hover {
+      background-color: #1abc9c;
+      color: #0f0f0f;
     }
 
     /* ================== RECUADRO ================== */
@@ -82,6 +80,7 @@
       padding: 30px;
       border-radius: 14px;
       background-color: #151515;
+      margin-top: 30px;
     }
 
     .box h2 {
@@ -89,31 +88,6 @@
       font-size: 1.6rem;
       margin-bottom: 20px;
       color: #1abc9c;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .training-info {
-      font-size: 1.1rem;
-      line-height: 1.9;
-      text-align: center;
-    }
-
-    .training-info strong {
-      color: #1abc9c;
-    }
-
-    .players {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    .important {
-      margin-top: 25px;
-      color: #ff4d4d;
-      font-weight: bold;
-      font-size: 1.2rem;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
@@ -121,6 +95,7 @@
 </head>
 
 <body>
+
   <div class="container">
 
     <!-- LOGO -->
@@ -129,45 +104,46 @@
     <!-- AÑO -->
     <h1 class="year">2026</h1>
 
-    <!-- BOTÓN INICIO -->
-       <a href="entrenamiento-tani.html" class="btn-type">TANI</a>
+    <!-- BOTÓN DEBAJO DEL AÑO -->
+    <a href="index.html" class="btn-main">INICIO</a>
+
+    <!-- BOTONES -->
+    <div>
+      <a href="entrenamiento-tani.html" class="btn-type">TANI</a>
       <a href="index.html" class="btn-type">CRIS</a>
       <a href="index.html" class="btn-type">VIEJITA</a>
       <a href="index.html" class="btn-type">CAPYLOVE</a>
-        <a href="index.html" class="btn-type">iCAPRI</a>
-          <a href="index.html" class="btn-type">ALDU</a>
-            <a href="index.html" class="btn-type">CANTU</a>
-
-    <!-- RECUADRO ENTRENAMIENTO -->
-    <div class="box">
-      <h2>Próximo Entrenamiento — Jueves 8</h2>
-
-<div style="background:#000; padding:20px; text-align:center; font-family:Arial, sans-serif;">
-
-  <!-- TÍTULO -->
-  <h2 style="color:#2ee6c6; letter-spacing:2px;">
-    RENDIMIENTO Y MEJORAS
-  </h2>
-
-  <!-- ESTADO -->
-  <p style="color:#00FF41; font-size:1.6em; font-weight:bold; margin:15px 0;">
-    ✅ ENTRENAMIENTO COMPLETADO
-  </p>
-
-  <!-- FECHA -->
-  <p style="color:#2ee6c6; font-size:1.1em;">
-    MARTES 6 DE ENERO ✅
-  </p>
-
-</div>
-
-       <footer style="text-align:center; font-size:0.85em; color:#00FF41; margin-top:20px; font-family:monospace;">
-  © HurtCore · Todos los derechos reservados
-</footer>
-
-          </div>
+      <a href="index.html" class="btn-type">iCAPRI</a>
+      <a href="index.html" class="btn-type">ALDU</a>
+      <a href="index.html" class="btn-type">CANTU</a>
     </div>
 
+    <!-- RECUADRO -->
+    <div class="box">
+
+      <h2>RENDIMIENTO Y MEJORAS</h2>
+
+      <p style="color:#00FF41; font-size:1.6em; font-weight:bold;">
+        ✅ ENTRENAMIENTO COMPLETADO
+      </p>
+
+      <p style="color:#2ee6c6;">
+        MARTES 6 DE ENERO ✅
+      </p>
+
+    
+
+
+
   </div>
+  
+    <footer style="text-align:center; font-size:0.85em; color:#00FF41; margin-top:20px; font-family:monospace;">
+        © HurtCore · Todos los derechos reservados
+        
+      </footer>
+      
+
 </body>
 </html>
+
+
