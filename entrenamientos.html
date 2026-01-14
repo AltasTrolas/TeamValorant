@@ -1,9 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Altas Trolas</title>
 
   <style>
@@ -30,57 +29,59 @@
       max-width: 340px;
       width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto 30px auto;
+      margin-bottom: 25px;
     }
 
-    /* ================== BOTÓN ================== */
+    /* ================== BOTÓN INICIO ================== */
+    .btn-main {
+      display: inline-block;
+      margin-bottom: 25px;
+      padding: 12px 34px;
+      background-color: #000;
+      color: #aaa;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      font-family: monospace;
+      transition: all 0.3s ease;
+    }
+
+    .btn-main:hover {
+      color: #2ee6c6;
+      border-color: #2ee6c6;
+      box-shadow: 0 0 10px #2ee6c6;
+    }
+
+    /* ================== BOTÓN TYPE ================== */
     .btn-type {
       display: inline-block;
-      margin-top: 10px;
-      padding: 14px 32px;
+      margin: 6px;
+      padding: 14px 28px;
       border: 2px solid #1abc9c;
-      border-radius: 6px;
+      border-radius: 10px;
       color: #1abc9c;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 0.9rem;
       letter-spacing: 2px;
       text-transform: uppercase;
       background-color: transparent;
       font-family: monospace;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 0;
-      animation: typing 2.8s steps(22, end) forwards;
-    }
-
-    .btn-type::after {
-      content: '|';
-      margin-left: 6px;
-      animation: blink 1s infinite;
+      transition: all 0.3s ease;
     }
 
     .btn-type:hover {
       background-color: #1abc9c;
       color: #0f0f0f;
-      box-shadow: 0 0 12px rgba(26, 188, 156, 0.6);
-    }
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 280px; }
-    }
-
-    @keyframes blink {
-      0%, 50%, 100% { opacity: 1; }
-      25%, 75% { opacity: 0; }
+      box-shadow: 0 0 12px rgba(26,188,156,0.6);
     }
 
     /* ================== AÑO ================== */
     h1.year {
       font-size: 2rem;
       letter-spacing: 4px;
-      margin: 35px 0 30px 0;
+      margin: 20px 0;
       opacity: 0.7;
     }
 
@@ -88,7 +89,7 @@
     .box {
       border: 2px solid #1abc9c;
       padding: 25px;
-      border-radius: 12px;
+      border-radius: 14px;
       background-color: #151515;
       margin-bottom: 25px;
     }
@@ -98,127 +99,77 @@
       font-size: 1.4rem;
       margin-bottom: 15px;
       color: #1abc9c;
-      text-align: center;
     }
 
-    .dates {
+    .dates, .info {
       font-size: 1.05rem;
       line-height: 1.8;
-      text-align: center;
-    }
-
-    .info {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      text-align: left;
     }
 
     .info strong {
       color: #1abc9c;
     }
+
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #00FF41;
+      margin-top: 25px;
+      font-family: monospace;
+    }
   </style>
 </head>
 
-
-
 <body>
+
   <div class="container">
 
-<style>
-  .texto {
-    line-height: 4.6;
-  }
-</style>
-
-<p class="texto"></p>
-
     <!-- LOGO -->
+    <img src="https://iili.io/fOl3YHG.png" alt="Logo Altas Trolas" class="logo">
 
-    
-    <a href="https://freeimage.host/"><img src="https://iili.io/fOl3YHG.png" alt="fOl3YHG.png" border="0"></a>
     <!-- AÑO -->
-    <h1 class="year"></h1>
-    <!-- BOTÓN -->
-    <a href="entrenamientos.html" class="btn-type">
-      ENTRENAMIENTO DE ENERO
-    </a>
+    <h1 class="year">2026</h1>
 
-<p style="line-height: 20.6;">
+    <!-- BOTÓN INICIO -->
+    <a href="index.html" class="btn-main">INICIO</a>
 
+    <!-- BOTÓN ENTRENAMIENTO -->
+    <a href="entrenamientos.html" class="btn-type">ENTRENAMIENTO DE ENERO</a>
 
     <!-- RECUADRO 1 -->
     <div class="box">
-      <h2>JUGAREMOS las prácticas oficiales de PREMIER</h2>
+      <h2>PRÁCTICAS OFICIALES PREMIER</h2>
       <div class="dates">
-        <p>📅 14Miércoles 21:00hrs</p>
-        <p>📅 15 Jueves  21:00hrs</p>
-        <p>📅 16 Viernes  21:00hrs</p>
-             <p>📅 17 Sábado  21:00hrs</p>
-              <h3>RANKED 📅 18 Domingo 21:00hrs</h3>
-                 
-        
+        <p>📅 14 Miércoles — 21:00 hrs</p>
+        <p>📅 15 Jueves — 21:00 hrs</p>
+        <p>📅 16 Viernes — 21:00 hrs</p>
+        <p>📅 17 Sábado — 21:00 hrs</p>
+        <p><strong>RANKED:</strong> 18 Domingo — 21:00 hrs</p>
         <p>🏆 1 Marzo — PLAYOFF</p>
       </div>
     </div>
 
     <!-- RECUADRO 2 -->
     <div class="box">
-      <h2>JUGADORES
+      <h2>JUGADORES</h2>
       <div class="info">
-        
-   <!-- BOTÓN INICIO -->
-       <a href="entrenamiento-tani.html" class="btn-type">TANI</a>
-      <a href="index.html" class="btn-type">CRIS</a>
-      <a href="index.html" class="btn-type">VIEJITA</a>
-      <a href="index.html" class="btn-type">CAPYLOVE</a>
-        <a href="index.html" class="btn-type">iCAPRI</a>
-          <a href="index.html" class="btn-type">ALDU</a>
-            <a href="index.html" class="btn-type">CANTU</a>
-        <br>
-
-        
-        <p>🎮 </p>
-       
-        <br>
+        <a href="entrenamiento-tani.html" class="btn-type">TANI</a>
+        <a href="entrenamiento-cris.html" class="btn-type">CRIS</a>
+        <a href="entrenamiento-viejita.html" class="btn-type">VIEJITA</a>
+        <a href="entrenamiento-capy.html" class="btn-type">CAPYLOVE</a>
+        <a href="entrenamiento-icapri.html" class="btn-type">iCAPRI</a>
+        <a href="entrenamiento-aldu.html" class="btn-type">ALDU</a>
+        <a href="entrenamiento-cantu.html" class="btn-type">CANTU</a>
 
         <p>✉️ <strong>Correo:</strong> altastrolas666@gmail.com</p>
       </div>
     </div>
-    
-        <br>
-        
-        <footer style="text-align:center; font-size:0.85em; color:#00FF41; margin-top:20px; font-family:monospace;">
-  © HurtCore · Todos los derechos reservados
-</footer>
 
+    <footer>
+      © HurtCore · Todos los derechos reservados
+    </footer>
 
   </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
