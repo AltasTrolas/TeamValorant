@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Altas Trolas</title>
 
   <style>
@@ -26,14 +25,36 @@
     }
 
     /* ================== LOGO ================== */
- .logo {
-  max-width: 400px;
-  height: auto;
-  display: block;
-  margin: 0 auto 50px auto;
+    .logo {
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin: 0 auto 40px auto;
     }
 
-    /* ================== BOTÓN ================== */
+    /* ================== BOTÓN INICIO ================== */
+    .btn-main {
+      display: inline-block;
+      margin-bottom: 40px;
+      padding: 14px 40px;
+      background-color: #000;
+      color: #aaa;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 3px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      font-family: monospace;
+      transition: all 0.3s ease;
+    }
+
+    .btn-main:hover {
+      color: #2ee6c6;
+      border-color: #2ee6c6;
+      box-shadow: 0 0 14px #2ee6c6;
+    }
+
+    /* ================== BOTÓN PRINCIPAL ================== */
     .btn-type {
       display: inline-block;
       margin-top: 25px;
@@ -62,7 +83,7 @@
     .btn-type:hover {
       background-color: #1abc9c;
       color: #0f0f0f;
-      box-shadow: 0 0 18px rgba(26, 188, 156, 0.9);
+      box-shadow: 0 0 18px rgba(26,188,156,0.9);
     }
 
     @keyframes typing {
@@ -79,7 +100,7 @@
     h1.year {
       font-size: 1.3rem;
       letter-spacing: 6px;
-      margin: 60px 0 50px 0;
+      margin: 20px 0 40px;
       opacity: 0.75;
     }
 
@@ -94,16 +115,24 @@
 
     .box h2 {
       margin-top: 0;
-      font-size: 1.8rem; /* ↑ casi x2 */
+      font-size: 1.8rem;
       margin-bottom: 40px;
       color: #1abc9c;
       text-align: center;
     }
 
     .dates {
-      font-size: 1.3rem; /* ↑ casi x2 */
+      font-size: 1.3rem;
       line-height: 2.2;
       text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.65em;
+      color: #00FF41;
+      margin-top: 50px;
+      font-family: monospace;
     }
   </style>
 </head>
@@ -112,18 +141,17 @@
   <div class="container">
 
     <!-- LOGO -->
-    <a href="https://freeimage.host/">
-      <img src="https://iili.io/fOl3YHG.png" alt="Logo Altas Trolas" class="logo">
-    </a>
+    <img src="https://iili.io/fOl3YHG.png" alt="Logo Altas Trolas" class="logo">
+
+    <!-- BOTÓN INICIO -->
+    <a href="index.html" class="btn-main">INICIO</a>
 
     <!-- AÑO -->
-    <h1 class="year"></h1>
-
-    <!-- BOTÓN -->
+    <h1 class="year">PUNTUALIDAD</h1>
+    <!-- BOTÓN ENTRENAMIENTOS -->
     <a href="entrenamientos.html" class="btn-type">
       PRÓXIMOS ENTRENAMIENTOS
     </a>
-
     <br><br><br><br>
 
     <!-- RECUADRO 1 -->
@@ -149,59 +177,15 @@
       <img
         src="https://raw.githubusercontent.com/AltasTrolas/TeamValorant/main/img/split.png.png"
         alt="Mapa Split"
-        style="
-          width:100%;
-          max-width:1300px;
-          height:auto;
-          display:block;
-          margin:60px auto;
-        "
+        style="width:100%; max-width:1300px; height:auto; display:block; margin:60px auto;"
       >
 
       <p style="font-size:1.3rem;"><strong>Mapa:</strong> SPLIT</p>
 
-      <br>
-
       <p style="font-size:1.3rem;"><strong>Jugadores:</strong></p>
       <p style="font-size:1.3rem;">🎮 VIEJALOCA - CRIS - CANTU - CAPY - TANI 🎮</p>
-      
-        <p style="font-size:1.3rem;"><strong>IMPORTANTE</strong></p>
-      <p style="font-size:1.3rem;">Importante tener en consideración los siguientes puntos</p>
-<p>🧠 ¿Quién debería dirigir el equipo?</p>
-<p>✅ Clove
 
-<p>¿Por qué?
-Porque no juega entry y puede pensar la ronda con calma.
-Porque juega agentes de control, ideales para dirigir.
-Y porque es el rol más estable para tomar decisiones macro durante la partida.</p>
-<p>🔁 IGL secundario (si CLOVE muere)
-
-
-SOVA toma el mando en ese escenario porque:
-Tiene información constante.
-Puede guiar bien los post-plant.
-Es ideal para llamadas defensivas y cierres de ronda.</p>
-<p>❌ ¿Quién NO debería dirigir? (y esto no es una crítica, es por rol) (Neon) ❌ Está entrando, su foco es ejecutar, no pensar macro.
-REYNA ❌ → Rol ego / clutch, pensado para impactar, no dirigir.
-SAGE ❌ → Rol ancla, foco en sobrevivir y apoyar al equipo.</p>
-<p style="color:#C77DFF;">🖤 Jerarquía clara (para cuidarnos y no discutir)</p>
-
-<p style="color:#C77DFF;"><strong>CLOVE manda.</strong></p>
-
-<p style="color:#C77DFF;"><strong>Si CLOVE muere → CRIS manda.</strong></p>
-<p>El resto comunica información, no toma decisiones.</p>
-
-<p>Frase interna para el team (úsala tal cual):
-“Si CLOVE habla, se escucha. Si no, SOVA. Todos los demás informan.”</p>
-
-Esto no busca limitar a nadie, sino todo lo contrario: reducir el tilt, cuidarnos entre todos y jugar con más confianza. Cuando cada uno sabe su lugar, el equipo funciona mejor.</p>
-
-<p><strong style="color:#00FF41;">Esto reduce tilt un 70%.</strong></p>
- 
- <p><strong style="color:#00FF41;">DUDAS y consultas, nos dudes en escribirnos. Estamos en:</strong></p>
- <p><strong style="color:#00FF41;">Whatsapp </strong></p>
-
-
+      <p><strong style="color:#00FF41;">Esto reduce tilt un 70%.</strong></p>
 
       <p style="font-size:1.3rem;">
         ✉️ <strong>Correo:</strong> altastrolas666@gmail.com
@@ -209,19 +193,15 @@ Esto no busca limitar a nadie, sino todo lo contrario: reducir el tilt, cuidarno
 
     </div>
 
-    <footer style="
-      text-align:center;
-      font-size:0.65em;
-      color:#00FF41;
-      margin-top:50px;
-      font-family:monospace;
-    ">
+    <footer>
       © HurtCore · Todos los derechos reservados
     </footer>
 
   </div>
 </body>
 </html>
+
+
 
 
 
