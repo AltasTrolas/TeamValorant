@@ -24,7 +24,7 @@
       max-width: 1200px;
     }
 
-    /* ================== LOGO ================== */
+    /* ===== LOGO SUPERIOR ===== */
     .logo {
       max-width: 400px;
       height: auto;
@@ -32,7 +32,6 @@
       margin: 0 auto 40px auto;
     }
 
-    /* ================== BOTÓN INICIO ================== */
     .btn-main {
       display: inline-block;
       margin-bottom: 40px;
@@ -54,49 +53,6 @@
       box-shadow: 0 0 14px #2ee6c6;
     }
 
-    /* ================== BOTÓN PRINCIPAL ================== */
-    .btn-type {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 22px 60px;
-      border: 3px solid #1abc9c;
-      border-radius: 8px;
-      color: #1abc9c;
-      text-decoration: none;
-      font-size: 0.9rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      background-color: transparent;
-      font-family: monospace;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 0;
-      animation: typing 3s steps(22, end) forwards;
-    }
-
-    .btn-type::after {
-      content: '|';
-      margin-left: 8px;
-      animation: blink 1s infinite;
-    }
-
-    .btn-type:hover {
-      background-color: #1abc9c;
-      color: #0f0f0f;
-      box-shadow: 0 0 18px rgba(26,188,156,0.9);
-    }
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 460px; }
-    }
-
-    @keyframes blink {
-      0%, 50%, 100% { opacity: 1; }
-      25%, 75% { opacity: 0; }
-    }
-
-    /* ================== AÑO ================== */
     h1.year {
       font-size: 1.3rem;
       letter-spacing: 6px;
@@ -104,13 +60,13 @@
       opacity: 0.75;
     }
 
-    /* ================== RECUADROS ================== */
+    /* 🔻 RECUADROS 30% MÁS PEQUEÑOS */
     .box {
       border: 3px solid #1abc9c;
-      padding: 70px;
+      padding: 49px;              /* antes 70px */
       border-radius: 20px;
       background-color: #151515;
-      margin-bottom: 70px;
+      margin-bottom: 49px;        /* antes 70px */
     }
 
     .box h2 {
@@ -140,18 +96,15 @@
 <body>
   <div class="container">
 
-    <!-- LOGO -->
-    <img src="https://iili.io/fOl3YHG.png" alt="Logo Altas Trolas" class="logo">
+    <!-- PRIMERA IMAGEN -->
+    <img src="https://iili.io/fSObbvj.png" alt="Premier 2026" class="logo">
 
     <!-- BOTÓN INICIO -->
     <a href="index.html" class="btn-main">INICIO</a>
 
-    <!-- AÑO -->
+    <!-- TÍTULO -->
     <h1 class="year">PUNTUALIDAD</h1>
-    <!-- BOTÓN ENTRENAMIENTOS -->
-    <a href="entrenamientos.html" class="btn-type">
-      PRÓXIMOS ENTRENAMIENTOS
-    </a>
+
     <br><br><br><br>
 
     <!-- RECUADRO 1 -->
@@ -169,31 +122,24 @@
 
     <!-- SEGUNDO BLOQUE -->
     <div class="box" style="border-color:#00FF41;">
-
       <h2 style="color:#00FF41;">Semana 1</h2>
 
       <p style="font-size:1.3rem;"><strong>JUGADORES</strong></p>
 
-      <img src="https://iili.io/f8pBAWG.png" alt="ChatGPT Image 10 ene 2026, 01 55 33 a.m." border=""
-       <img 
-  src="https://iili.io/f8pBAWG.png"
-  alt="ChatGPT Image 10 ene 2026, 01 55 33 a.m."
-  style="width:100%; height:auto;"
->
-
+      <img 
+        src="https://iili.io/f8pBAWG.png"
+        alt="Insignia Semana 1"
+        style="width:100%; max-width:700px; height:auto; margin:30px auto; display:block;"
       >
-
-      <p style="font-size:1.3rem;"><strong>Mapa:</strong> SPLIT</p>
-
-      <p style="font-size:1.3rem;"><strong>Jugadores:</strong></p>
-      <p style="font-size:1.3rem;">🎮 VIEJALOCA - CRIS - CANTU - CAPY - TANI 🎮</p>
-
       <p><strong style="color:#00FF41;">Esto reduce tilt un 70%.</strong></p>
+      <p style="font-size:1.3rem;"><strong>Mapa:</strong> SPLIT</p>
+      <p style="font-size:1.3rem;">🎮 VIEJALOCA - ALDU - CANTU - CAPY - TANI 🎮</p>
+
+
 
       <p style="font-size:1.3rem;">
         ✉️ <strong>Correo:</strong> altastrolas666@gmail.com
       </p>
-
     </div>
 
     <footer>
@@ -203,6 +149,7 @@
   </div>
 </body>
 </html>
+
 
 
 
